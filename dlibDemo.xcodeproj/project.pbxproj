@@ -12,9 +12,17 @@
 		43A060061FAE9E360003823C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A060041FAE9E360003823C /* Main.storyboard */; };
 		43A060081FAE9E360003823C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A060071FAE9E360003823C /* Assets.xcassets */; };
 		43A0600B1FAE9E360003823C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A060091FAE9E360003823C /* LaunchScreen.storyboard */; };
+		43A060141FAE9E670003823C /* shape_predictor_68_face_landmarks.dat in Resources */ = {isa = PBXBuildFile; fileRef = 43A060121FAE9E670003823C /* shape_predictor_68_face_landmarks.dat */; };
+		43A060151FAE9E670003823C /* libdlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A060131FAE9E670003823C /* libdlib.a */; };
+		43A060181FAE9F490003823C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A060171FAE9F420003823C /* Accelerate.framework */; };
+		43A0601D1FAEA0850003823C /* DlibWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43A0601C1FAEA0850003823C /* DlibWrapper.mm */; };
+		43A060201FAEA29A0003823C /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A0601F1FAEA29A0003823C /* DemoViewController.swift */; };
+		43A060221FAEA2DC0003823C /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A060211FAEA2DC0003823C /* SessionHandler.swift */; };
+		4B1D9ECF3860D51A9582676B /* libPods-dlibDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41640919F4EBD8194338500B /* libPods-dlibDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41640919F4EBD8194338500B /* libPods-dlibDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dlibDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A05FFD1FAE9E360003823C /* dlibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dlibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A060001FAE9E360003823C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43A060021FAE9E360003823C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,16 @@
 		43A060071FAE9E360003823C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43A0600A1FAE9E360003823C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43A0600C1FAE9E360003823C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A060121FAE9E670003823C /* shape_predictor_68_face_landmarks.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = shape_predictor_68_face_landmarks.dat; path = dlibDemo/lib/shape_predictor_68_face_landmarks.dat; sourceTree = "<group>"; };
+		43A060131FAE9E670003823C /* libdlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdlib.a; path = dlibDemo/lib/libdlib.a; sourceTree = "<group>"; };
+		43A060171FAE9F420003823C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		43A0601B1FAEA0840003823C /* dlibDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dlibDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		43A0601C1FAEA0850003823C /* DlibWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DlibWrapper.mm; sourceTree = "<group>"; };
+		43A0601E1FAEA0A10003823C /* DlibWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DlibWrapper.h; sourceTree = "<group>"; };
+		43A0601F1FAEA29A0003823C /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		43A060211FAEA2DC0003823C /* SessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHandler.swift; sourceTree = "<group>"; };
+		A46F73B22A9EC8FB25492357 /* Pods-dlibDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dlibDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dlibDemo/Pods-dlibDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D08D241340303107B3E4CA71 /* Pods-dlibDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dlibDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dlibDemo/Pods-dlibDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A060181FAE9F490003823C /* Accelerate.framework in Frameworks */,
+				43A060151FAE9E670003823C /* libdlib.a in Frameworks */,
+				4B1D9ECF3860D51A9582676B /* libPods-dlibDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +59,12 @@
 		43A05FF41FAE9E360003823C = {
 			isa = PBXGroup;
 			children = (
+				43A060131FAE9E670003823C /* libdlib.a */,
+				43A060121FAE9E670003823C /* shape_predictor_68_face_landmarks.dat */,
 				43A05FFF1FAE9E360003823C /* dlibDemo */,
 				43A05FFE1FAE9E360003823C /* Products */,
+				43A060161FAE9F410003823C /* Frameworks */,
+				45215EF8AB4BC38BF1E53923 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +79,9 @@
 		43A05FFF1FAE9E360003823C /* dlibDemo */ = {
 			isa = PBXGroup;
 			children = (
+				43A060191FAEA0430003823C /* CV */,
 				43A060001FAE9E360003823C /* AppDelegate.swift */,
+				43A0601F1FAEA29A0003823C /* DemoViewController.swift */,
 				43A060021FAE9E360003823C /* ViewController.swift */,
 				43A060041FAE9E360003823C /* Main.storyboard */,
 				43A060071FAE9E360003823C /* Assets.xcassets */,
@@ -64,6 +91,35 @@
 			path = dlibDemo;
 			sourceTree = "<group>";
 		};
+		43A060161FAE9F410003823C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43A060171FAE9F420003823C /* Accelerate.framework */,
+				41640919F4EBD8194338500B /* libPods-dlibDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43A060191FAEA0430003823C /* CV */ = {
+			isa = PBXGroup;
+			children = (
+				43A0601E1FAEA0A10003823C /* DlibWrapper.h */,
+				43A060211FAEA2DC0003823C /* SessionHandler.swift */,
+				43A0601C1FAEA0850003823C /* DlibWrapper.mm */,
+				43A0601B1FAEA0840003823C /* dlibDemo-Bridging-Header.h */,
+			);
+			path = CV;
+			sourceTree = "<group>";
+		};
+		45215EF8AB4BC38BF1E53923 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A46F73B22A9EC8FB25492357 /* Pods-dlibDemo.debug.xcconfig */,
+				D08D241340303107B3E4CA71 /* Pods-dlibDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43A0600F1FAE9E360003823C /* Build configuration list for PBXNativeTarget "dlibDemo" */;
 			buildPhases = (
+				3EA9D968879D9AF2F7CD35B4 /* [CP] Check Pods Manifest.lock */,
 				43A05FF91FAE9E360003823C /* Sources */,
 				43A05FFA1FAE9E360003823C /* Frameworks */,
 				43A05FFB1FAE9E360003823C /* Resources */,
+				5264B9C948C048F541DFB2A4 /* [CP] Embed Pods Frameworks */,
+				43467A176CD4831DEA680459 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +155,7 @@
 				TargetAttributes = {
 					43A05FFC1FAE9E360003823C = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,10 +186,62 @@
 				43A0600B1FAE9E360003823C /* LaunchScreen.storyboard in Resources */,
 				43A060081FAE9E360003823C /* Assets.xcassets in Resources */,
 				43A060061FAE9E360003823C /* Main.storyboard in Resources */,
+				43A060141FAE9E670003823C /* shape_predictor_68_face_landmarks.dat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EA9D968879D9AF2F7CD35B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dlibDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43467A176CD4831DEA680459 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dlibDemo/Pods-dlibDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5264B9C948C048F541DFB2A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dlibDemo/Pods-dlibDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43A05FF91FAE9E360003823C /* Sources */ = {
@@ -137,7 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A060031FAE9E360003823C /* ViewController.swift in Sources */,
+				43A0601D1FAEA0850003823C /* DlibWrapper.mm in Sources */,
 				43A060011FAE9E360003823C /* AppDelegate.swift in Sources */,
+				43A060201FAEA29A0003823C /* DemoViewController.swift in Sources */,
+				43A060221FAEA2DC0003823C /* SessionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,31 +387,74 @@
 		};
 		43A060101FAE9E360003823C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A46F73B22A9EC8FB25492357 /* Pods-dlibDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UEY2JVZLMQ;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"${inherited}",
+					DLIB_JPEG_SUPPORT,
+					NDEBUG,
+					DLIB_USE_BLAS,
+					DLIB_USE_LAPACK,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dlibDemo/lib",
+				);
 				INFOPLIST_FILE = dlibDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dlibDemo/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clarke.dlibDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "dlibDemo/CV/dlibDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
 		43A060111FAE9E360003823C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08D241340303107B3E4CA71 /* Pods-dlibDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UEY2JVZLMQ;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"${inherited}",
+					DLIB_JPEG_SUPPORT,
+					NDEBUG,
+					DLIB_USE_BLAS,
+					DLIB_USE_LAPACK,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dlibDemo/lib",
+				);
 				INFOPLIST_FILE = dlibDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dlibDemo/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clarke.dlibDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "dlibDemo/CV/dlibDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
