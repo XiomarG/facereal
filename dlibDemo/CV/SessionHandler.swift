@@ -58,6 +58,7 @@ class SessionHandler : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, A
         if output.connections.count > 0 {
             NSLog(" setting portrait")
             (output.connections[0] as! AVCaptureConnection).videoOrientation = AVCaptureVideoOrientation.portrait
+            (output.connections[0] as! AVCaptureConnection).isVideoMirrored = true
         }
         // availableMetadataObjectTypes change when output is added to session.
         // before it is added, availableMetadataObjectTypes is empty

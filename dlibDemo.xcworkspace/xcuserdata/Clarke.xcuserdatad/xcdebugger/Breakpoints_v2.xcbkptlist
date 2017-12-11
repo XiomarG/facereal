@@ -10,11 +10,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "dlibDemo/CV/DlibWrapper.mm"
-            timestampString = "534237868.938274"
+            timestampString = "534645299.731938"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "-doWorkOnSampleBuffer:inRects:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dlibDemo/CV/DlibWrapper.mm"
+            timestampString = "534645299.732376"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
             landmarkName = "-doWorkOnSampleBuffer:inRects:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "dlibDemo/CV/DlibWrapper.mm"
-            timestampString = "534237868.938719"
+            timestampString = "534645299.732642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "-doWorkOnSampleBuffer:inRects:"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +58,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "dlibDemo/CV/DlibWrapper.mm"
-            timestampString = "534237868.938993"
+            timestampString = "534645299.732899"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-prepare"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dlibDemo/CV/DlibWrapper.mm"
+            timestampString = "534645299.733175"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "-doWorkOnSampleBuffer:inRects:"
             landmarkType = "7">
          </BreakpointContent>

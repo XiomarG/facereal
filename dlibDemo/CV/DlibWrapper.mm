@@ -61,11 +61,11 @@
 //    object_pts.push_back(cv::Point3d(0.000000, -3.116408, 6.097667));    //#45 mouth central bottom corner
 //    object_pts.push_back(cv::Point3d(0.000000, -7.415691, 4.070434));    //#6 chin corner
     object_pts.push_back(cv::Point3d(0,0,0)); // nose tip
-    object_pts.push_back(cv::Point3d(0, -330, -65)); // chin
-    object_pts.push_back(cv::Point3d(-225,170,-135)); // left eye left corner
-    object_pts.push_back(cv::Point3d(225,170,-135)); // right eye right corner
-    object_pts.push_back(cv::Point3d(-150,-150,-125)); // left mouth corner
-    object_pts.push_back(cv::Point3d(150,-150,-125)); // right mouth corner
+    object_pts.push_back(cv::Point3d(0, 330, -65)); // chin
+    object_pts.push_back(cv::Point3d(-225,-170,-135)); // left eye left corner
+    object_pts.push_back(cv::Point3d(225,-170,-135)); // right eye right corner
+    object_pts.push_back(cv::Point3d(-150,150,-125)); // left mouth corner
+    object_pts.push_back(cv::Point3d(150,150,-125)); // right mouth corner
     //reproject 3D points world coordinate axis to verify result pose
     reprojectsrc.push_back(cv::Point3d(0, 0, 1000.0));
 //    reprojectsrc.push_back(cv::Point3d(10.0, 10.0, -10.0));
@@ -146,10 +146,17 @@
         
         // and draw them into the image (samplebuffer)
         for (unsigned long k = 0; k < shape.num_parts(); k++) {
-            if (k == 30 || k == 8 || k == 36 || k == 45 || k == 48 || k == 54) {
+//            if (k == 30 || k == 8 || k == 36 || k == 45 || k == 48 || k == 54) {
                 dlib::point p = shape.part(k);
                 draw_solid_circle(img, p, 3, dlib::rgb_pixel(0, 255, 255));
-            }
+//            }
+        }
+        // draw model 2d points
+        for (unsigned long k = 0; k < object_pts.size(); k++) {
+            dlib::point p;
+            p.x() = object_pts[k].x + width / 2;
+            p.y() = object_pts[k].y + height / 2;
+            draw_solid_circle(img, p, 3, dlib::rgb_pixel(255,0,0));
         }
         //fill in 2D ref points, annotations follow https://ibug.doc.ic.ac.uk/resources/300-W/
 //        image_pts.push_back(cv::Point2d(shape.part(17).x(), shape.part(17).y())); //#17 left brow left corner
@@ -177,8 +184,12 @@
         
         //Intrisics can be calculated using opencv sample code under opencv/sources/samples/cpp/tutorial_code/calib3d
         //Normally, you can also apprximate fx and fy by image width, cx by half image width, cy by half image height instead
-        double K[9] = { 6.5308391993466671e+002, 0.0, 3.1950000000000000e+002, 0.0, 6.5308391993466671e+002, 2.3950000000000000e+002, 0.0, 0.0, 1.0 };
-        double D[5] = { 7.0834633684407095e-002, 6.9140193737175351e-002, 0.0, 0.0, -1.3073460323689292e+000 };
+        double focalLength = width;
+        cv::Point center = cv::Point(width / 2.0, height / 2.0);
+        double K[9] = { double(focalLength), 0.0, double(center.x),
+                        0.0, double(focalLength), double(center.y),
+                        0.0, 0.0, 1.0 };
+        double D[5] = { 0,0,0,0,0};
         //fill in cam intrinsics and distortion coefficients
         cv::Mat cam_matrix = cv::Mat(3, 3, CV_64FC1, K);
         cv::Mat dist_coeffs = cv::Mat(5, 1, CV_64FC1, D);
